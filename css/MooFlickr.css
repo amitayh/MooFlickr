@@ -1,0 +1,150 @@
+#MooFlickr {
+    margin: 20px auto;
+    width: 620px;
+}
+
+#MooFlickr .image {
+    width: 510px;
+    height: 510px;
+    margin: 20px auto;
+    position: relative;
+    background: url(../images/MooFlickr/spinner.gif) no-repeat center;
+}
+#MooFlickr .image img {
+    display: block;
+    position: absolute;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 5px solid #fff;
+    right: 50%;
+    top: 50%;
+}
+
+/* Gallery display */
+
+#MooFlickr .galleries h3 {
+    background: #000 url(../images/layout/grad1.gif) repeat-x top;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #555 #252525 #252525 #555;
+    height: 38px;
+    padding: 2px 10px 0;
+    cursor: pointer;
+    margin-bottom: 0;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+}
+#MooFlickr .galleries h3 .arrow-down {
+    width: 9px;
+    height: 6px;
+    float: left;
+    background: url(../images/MooFlickr/arrow-down.gif) no-repeat;
+    overflow: hidden;
+    margin-top: 16px;
+}
+#MooFlickr .galleries h3:hover {
+    background-color: #111;
+    background-image: url(../images/layout/grad2.gif);
+}
+#MooFlickr .galleries ul {
+    border-left: 1px solid #555;
+}
+#MooFlickr .galleries ul li {
+    margin: 0;
+    list-style: none;
+    list-style-image: none;
+    background: url(../images/layout/black90.png) repeat;
+    padding: 10px;
+    cursor: pointer;
+    border-color: #252525;
+    border-style: none solid solid none;
+    border-width: 1px;
+}
+*:first-child+html #MooFlickr .galleries ul li {
+    margin-bottom: -3px;
+    zoom: 1;
+}
+
+#MooFlickr .galleries ul li h4,
+#MooFlickr .galleries ul li p {
+    margin-bottom: 10px;
+    padding: 0;
+    background: none;
+}
+#MooFlickr .galleries ul li p.details {
+    margin: 0;
+    color: #555;
+}
+#MooFlickr .galleries ul li h4 img {
+    float: left;
+    border: 3px solid #555;
+}
+
+/* Carousel */
+
+#thumbnails {
+    background: #111 url(../images/MooFlickr/thumbnails.gif) repeat-x center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 10px;
+    width: 571px;
+    margin: auto;
+}
+
+#thumbnails #scrollContent {
+    margin: 0;
+    padding: 0;
+}
+
+#thumbnails .scrollControl {
+    width: 20px;
+    height: 79px;
+    color: #fff;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #555 #252525 #252525 #555;
+    background: #000 url(../images/MooFlickr/scroll.gif) no-repeat -20px 50%;
+}
+
+#thumbnails .scrollPrev {
+    float: right;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+#thumbnails .scrollNext {
+    float: left;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    background-position: 0 50%;
+}
+
+#thumbnails .scrollArea {
+    height: 81px;
+    margin: 0 30px;
+    overflow: hidden;
+    width: 511px;
+}
+
+#thumbnails .scrollArea li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-left: 5px;
+    border: 3px solid #555;
+    width: 75px;
+    height: 75px;
+    background: #111 url(../images/MooFlickr/spinner.gif) no-repeat center;
+}
+#thumbnails .scrollArea li img {
+    display: block;
+    cursor: pointer;
+}
